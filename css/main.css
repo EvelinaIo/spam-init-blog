@@ -1,0 +1,177 @@
+@import "typography.css";
+@import "media-queries.css";
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    grid-area: hd;
+    background: rgba(230, 235, 224, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo,
+.menu {
+    height: 30px;
+}
+
+/* Content */
+.feature {
+    grid-area: feat;
+    margin: 0 20px;
+    background: #fff;
+    box-shadow: #2D2C1D;
+    justify-self: center;
+}
+
+.blog-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+    grid-template-areas:
+    "photo"
+    "cont";
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 1px #ddd;
+    max-width: 500px;
+}
+
+.card-photo {
+    grid-area: photo;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+#post-one {
+    background-image: url("../img/spam-musubi.jpg");
+    background-repeat: stretch;
+    background-size: cover;
+    background-position: center;
+}
+
+#post-two {
+    background-image: url("../img/monty-spam.jpg");
+    background-repeat: stretch;
+    background-size: cover;
+    background-position: center;
+}
+
+#post-three {
+    background-image: url("../img/spam-pattern.jpg");
+    background-repeat: stretch;
+    background-size: cover;
+    background-position: center;
+}
+
+#post-four {
+    background-image: url("../img/spam-plate.jpg");
+    background-repeat: stretch;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-small {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    color: #238381;
+    border: 1px solid #238381;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.btn-small:hover {
+    background: #238381;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sd;
+    margin: 0 20px;
+}
+
+/* Search Box*/
+.sidebar h3 {
+    text-transform: uppercase;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 20px;
+}
+
+.search-box input[type=search] {
+    background: #E6EBE0;
+    color: #2D2C1D;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    width: 300px;
+}
+
+.search-icon {
+    background: none;
+    border: 0;
+    font-size: 1.5em;
+    color: #2D2C1D;
+    cursor: pointer;
+}
+
+/* About section*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20% 0 20%;
+}
+
+.round-image {
+    width: 180px;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    grid-area: ft;
+    background: #E6EBE0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px auto 40px auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact i {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
