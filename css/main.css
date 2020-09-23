@@ -1,5 +1,8 @@
 @import "typography.css";
 @import "media-queries.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&display=swap');
+@import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css");
+
 
 body {
     font-size: 16px;
